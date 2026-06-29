@@ -1,0 +1,122 @@
+[
+  {
+    "Customer ID": "CUST001",
+    "Name": "Arjun Mehta",
+    "Age": 32,
+    "City": "Mumbai",
+    "Phone": "9876543210",
+    "Address": "12B Andheri West, Mumbai",
+    "Credit Score (/900)": 820,
+    "Monthly Salary (₹)": 85000,
+    "Pre-Approved Limit (₹)": 500000,
+    "Existing Loan (₹)": 150000
+  },
+  {
+    "Customer ID": "CUST002",
+    "Name": "Priya Sharma",
+    "Age": 27,
+    "City": "Delhi",
+    "Phone": "9123456780",
+    "Address": "34 Lajpat Nagar, Delhi",
+    "Credit Score (/900)": 755,
+    "Monthly Salary (₹)": 60000,
+    "Pre-Approved Limit (₹)": 300000,
+    "Existing Loan (₹)": 0
+  },
+  {
+    "Customer ID": "CUST003",
+    "Name": "Rohit Verma",
+    "Age": 45,
+    "City": "Bangalore",
+    "Phone": "9988776655",
+    "Address": "56 Indiranagar, Bangalore",
+    "Credit Score (/900)": 680,
+    "Monthly Salary (₹)": 120000,
+    "Pre-Approved Limit (₹)": 700000,
+    "Existing Loan (₹)": 250000
+  },
+  {
+    "Customer ID": "CUST004",
+    "Name": "Sneha Iyer",
+    "Age": 30,
+    "City": "Chennai",
+    "Phone": "9871234560",
+    "Address": "89 Anna Nagar, Chennai",
+    "Credit Score (/900)": 790,
+    "Monthly Salary (₹)": 75000,
+    "Pre-Approved Limit (₹)": 450000,
+    "Existing Loan (₹)": 80000
+  },
+  {
+    "Customer ID": "CUST005",
+    "Name": "Karan Singh",
+    "Age": 38,
+    "City": "Pune",
+    "Phone": "9765432109",
+    "Address": "22 Kothrud, Pune",
+    "Credit Score (/900)": 640,
+    "Monthly Salary (₹)": 95000,
+    "Pre-Approved Limit (₹)": 400000,
+    "Existing Loan (₹)": 300000
+  },
+  {
+    "Customer ID": "CUST006",
+    "Name": "Meera Nair",
+    "Age": 25,
+    "City": "Hyderabad",
+    "Phone": "9654321098",
+    "Address": "15 Banjara Hills, Hyderabad",
+    "Credit Score (/900)": 810,
+    "Monthly Salary (₹)": 55000,
+    "Pre-Approved Limit (₹)": 250000,
+    "Existing Loan (₹)": 0
+  },
+  {
+    "Customer ID": "CUST007",
+    "Name": "Aditya Patel",
+    "Age": 42,
+    "City": "Ahmedabad",
+    "Phone": "9543210987",
+    "Address": "78 Navrangpura, Ahmedabad",
+    "Credit Score (/900)": 730,
+    "Monthly Salary (₹)": 110000,
+    "Pre-Approved Limit (₹)": 600000,
+    "Existing Loan (₹)": 200000
+  },
+  {
+    "Customer ID": "CUST008",
+    "Name": "Divya Reddy",
+    "Age": 29,
+    "City": "Kolkata",
+    "Phone": "9432109876",
+    "Address": "45 Salt Lake, Kolkata",
+    "Credit Score (/900)": 695,
+    "Monthly Salary (₹)": 70000,
+    "Pre-Approved Limit (₹)": 350000,
+    "Existing Loan (₹)": 50000
+  },
+  {
+    "Customer ID": "CUST009",
+    "Name": "Vikram Joshi",
+    "Age": 55,
+    "City": "Jaipur",
+    "Phone": "9321098765",
+    "Address": "101 Malviya Nagar, Jaipur",
+    "Credit Score (/900)": 870,
+    "Monthly Salary (₹)": 200000,
+    "Pre-Approved Limit (₹)": 1200000,
+    "Existing Loan (₹)": 500000
+  },
+  {
+    "Customer ID": "CUST010",
+    "Name": "Nisha Gupta",
+    "Age": 33,
+    "City": "Lucknow",
+    "Phone": "9210987654",
+    "Address": "67 Gomti Nagar, Lucknow",
+    "Credit Score (/900)": 590,
+    "Monthly Salary (₹)": 45000,
+    "Pre-Approved Limit (₹)": 150000,
+    "Existing Loan (₹)": 100000
+  }
+]
