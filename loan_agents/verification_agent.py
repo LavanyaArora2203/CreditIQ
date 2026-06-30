@@ -1,7 +1,10 @@
 from agents import Agent
+from models.verification_output import VerificationOutput
+
 
 from prompts.verification_prompt import VERIFICATION_AGENT_PROMPT
-from utils.constants import VERIFICATION_AGENT_NAME
+from Utils.constants import VERIFICATION_AGENT_NAME
+from tools.crm_tool import get_customer_kyc
 
 
 verification_agent = Agent(
@@ -10,4 +13,8 @@ verification_agent = Agent(
     handoff_description=(
         "Verifies customer identity, PAN, Aadhaar, and KYC."
     ),
+    output_type=VerificationOutput,
+    tools=[
+        get_customer_kyc
+    ]
 )
