@@ -1,59 +1,39 @@
 from fastapi import FastAPI, HTTPException
-from pathlib import Path
 import json
-import logging
+from pathlib import Path
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(message)s"
-)
+app = FastAPI(title="Mock Credit Bureau API")
 
-logger = logging.getLogger(__name__)
-
-app = FastAPI(
-    title="Mock Credit Bureau API",
-    version="1.0"
-)
-
-DATA_PATH = (
-    Path(__file__)
-    .resolve()
-    .parent.parent
+DATA_FILE = (
+    Path(__file__).resolve().parent.parent
     / "Data"
-    / "kyc.json"
+    / "customers.json"
 )
 
 
-def load_kyc():
-    with open(DATA_PATH, "r", encoding="utf-8") as file:
-        return json.load(file)
+def load_customers():
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-kyc_data = load_kyc()
+@app.get("/credit/{customer_id}")
+async def get_credit_details(customer_id: str):
 
+    customers = load_customers()
 
-@app.get("/")
-def root():
-    return {
-        "service": "Credit Bureau API",
-        "status": "running"
-    }
+    for customer in customers:
 
+        if customer["Customer ID"] == customer_id:
 
-@app.get("/kyc/{customer_id}")
-def get_kyc(customer_id: str):
-
-    logger.info(f"Checking KYC for {customer_id}")
-
-    if customer_id in kyc_data:
-
-        logger.info("KYC record found")
-
-        return kyc_data[customer_id]
-
-    logger.warning("KYC record not found")
+            return {
+                "customer_id": customer["Customer ID"],
+                "credit_score": customer["Credit Score (/900)"],
+                "monthly_salary": customer["Monthly Salary (₹)"],
+                "preapproved_limit": customer["Pre-Approved Limit (₹)"],
+                "existing_loan": customer["Existing Loan (₹)"],
+            }
 
     raise HTTPException(
         status_code=404,
-        detail="KYC record not found"
+        detail="Customer not found",
     )
