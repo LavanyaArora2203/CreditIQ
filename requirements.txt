@@ -25,23 +25,3 @@ requests
 # pytest
 streamlit
 pytest
-
-Tailwind
-
-Shadcn
-
-Axios
-
-React Query
-
-React Router
-
-React Hook Form
-
-Zod
-
-Framer Motion
-
-Lucide React
-
-Recharts
