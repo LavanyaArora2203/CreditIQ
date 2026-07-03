@@ -1,7 +1,7 @@
 from agents import Agent
 
-from prompts.underwriting_prompt import UNDERWRITING_AGENT_PROMPT
-from Utils.constants import UNDERWRITING_AGENT_NAME
+from backend.prompts.underwriting_prompt import UNDERWRITING_AGENT_PROMPT
+from backend.Utils.constants import UNDERWRITING_AGENT_NAME
 
 
 underwriting_agent = Agent(

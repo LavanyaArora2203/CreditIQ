@@ -1,0 +1,47 @@
+openai-agents
+fastapi
+reportlab
+faker
+# asyncio
+
+sqlalchemy
+pymysql
+
+openai
+uvicorn 
+python-dotenv 
+pydantic 
+httpx 
+requests 
+# duckdb 
+# pandas 
+# numpy 
+# matplotlib
+
+# plotly 
+
+# rich 
+# loguru 
+# pytest
+streamlit
+pytest
+
+Tailwind
+
+Shadcn
+
+Axios
+
+React Query
+
+React Router
+
+React Hook Form
+
+Zod
+
+Framer Motion
+
+Lucide React
+
+Recharts

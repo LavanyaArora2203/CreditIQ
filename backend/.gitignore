@@ -1,0 +1,11 @@
+*info.txt
+.venv/
+__pycache__/
+*.pyc
+.env
+.vscode/
+.idea/
+.Reports/*.pdf
+.GeneratedLetters/
+*validation.py
+.Logs/

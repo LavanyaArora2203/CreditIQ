@@ -1,7 +1,7 @@
 from agents import Agent
-from tools.offermart_tool import get_customer_offer
-from prompts.sales_prompt import SALES_AGENT_PROMPT
-from models.sales_output import SalesOutput
+from backend.tools.offermart_tool import get_customer_offer
+from backend.prompts.sales_prompt import SALES_AGENT_PROMPT
+from backend.models.sales_output import SalesOutput
 
 sales_agent = Agent(
     name="Sales Agent",

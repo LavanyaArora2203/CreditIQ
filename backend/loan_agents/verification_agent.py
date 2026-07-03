@@ -1,10 +1,10 @@
 from agents import Agent
-from models.verification_output import VerificationOutput
+from backend.models.verification_output import VerificationOutput
 
 
-from prompts.verification_prompt import VERIFICATION_AGENT_PROMPT
-from Utils.constants import VERIFICATION_AGENT_NAME
-from tools.crm_tool import get_customer_kyc
+from backend.prompts.verification_prompt import VERIFICATION_AGENT_PROMPT
+from backend.Utils.constants import VERIFICATION_AGENT_NAME
+from backend.tools.crm_tool import get_customer_kyc
 
 
 verification_agent = Agent(
