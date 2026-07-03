@@ -45,7 +45,7 @@ with st.sidebar:
 
     st.subheader("🔑 OpenAI API Key")
 
-    env_key = os.environ.get("OPENAI_API_KEY", "")
+    env_key = "XXXXX"
     api_key_input = st.text_input(
         "OpenAI API Key",
         value=env_key,
