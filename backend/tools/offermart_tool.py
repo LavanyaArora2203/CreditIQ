@@ -3,7 +3,7 @@ from agents import function_tool
 
 
 
-API_URL = "http://127.0.0.1:8002"
+API_URL = "http://127.0.0.1:8000"
 
 @function_tool
 def get_customer_offer(customer_id: str):

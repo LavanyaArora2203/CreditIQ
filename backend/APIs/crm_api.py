@@ -15,9 +15,10 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-app = FastAPI(
-    title="Mock CRM API",
-    version="1.0"
+from fastapi import APIRouter
+
+router = APIRouter(
+    tags=["CRM"]
 )
 from pathlib import Path
 import json
@@ -42,15 +43,14 @@ customers = load_json(CUSTOMERS_PATH)
 kyc_records = load_json(KYC_PATH)
 
 
-@app.get("/")
+@router.get("/")
 def root():
     return {
         "service": "CRM API",
         "status": "running"
     }
 
-
-@app.get("/customer/{customer_id}")
+@router.get("/customer/{customer_id}")
 def get_customer(customer_id: str):
 
     logger.info(f"Searching customer {customer_id}")
@@ -71,7 +71,7 @@ def get_customer(customer_id: str):
     )
 
 
-@app.get("/kyc/{customer_id}")
+@router.get("/kyc/{customer_id}")
 def get_customer_kyc(customer_id: str):
 
     logger.info(f"Searching KYC info for customer {customer_id}")

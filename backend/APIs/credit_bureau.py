@@ -2,7 +2,12 @@ from fastapi import FastAPI, HTTPException
 import json
 from pathlib import Path
 
-app = FastAPI(title="Mock Credit Bureau API")
+from fastapi import APIRouter
+
+router = APIRouter(
+    prefix="/credit",
+    tags=["Credit Bureau"]
+)
 
 DATA_FILE = (
     Path(__file__).resolve().parent.parent
@@ -16,7 +21,7 @@ def load_customers():
         return json.load(f)
 
 
-@app.get("/credit/{customer_id}")
+@router.get("/{customer_id}")
 async def get_credit_details(customer_id: str):
 
     customers = load_customers()

@@ -11,9 +11,10 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-app = FastAPI(
-    title="Mock OfferMart API",
-    version="1.0"
+from fastapi import APIRouter
+
+router = APIRouter(
+    tags=["Offer Mart"]
 )
 
 DATA_PATH = (
@@ -33,7 +34,7 @@ def load_offers():
 offers = load_offers()
 
 
-@app.get("/")
+@router.get("/")
 def root():
     return {
         "service": "OfferMart API",
@@ -41,7 +42,7 @@ def root():
     }
 
 
-@app.get("/offer/{customer_id}")
+@router.get("/offer/{customer_id}")
 def get_offer(customer_id: str):
 
     logger.info(f"Searching offer for {customer_id}")
