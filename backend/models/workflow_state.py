@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from models.workflow_stage import WorkflowStage
+from backend.models.workflow_stage import WorkflowStage
 
 
 class WorkflowState(BaseModel):

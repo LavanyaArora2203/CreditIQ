@@ -10,6 +10,7 @@ from Orchestration.state_machine import (
     StateMachine,
     WorkflowState,
 )
+from Services.verification_service import verify_customer
 from Orchestration.agent_executor import AgentExecutor
 from Orchestration.routing import WorkflowRouter
 

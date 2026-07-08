@@ -23,7 +23,7 @@ def generate_sanction_letter_tool(
     interest_rate: float,
     tenure_months: int,
 ):
-    customer = json.loads(customer)
+    # customer = json.loads(customer)
     """
     Generate a loan sanction letter for an approved customer.
 

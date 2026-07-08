@@ -1,10 +1,11 @@
 import requests
 
-from Services.salary_service import evaluate_salary
-from Utils.agent_logger import log_agent
+from backend.Services.salary_service import evaluate_salary
+from backend.Utils.agent_logger import log_agent
 
 CREDIT_API = "http://127.0.0.1:8000/credit"
 
+import requests
 
 def evaluate_loan(
     customer_id: str,
@@ -12,19 +13,74 @@ def evaluate_loan(
     annual_interest_rate: float = 10,
     tenure_months: int = 60,
 ):
+    # --------------------------------------------
+    # Fetch customer from Credit Bureau API
+    # --------------------------------------------
+    try:
+        response = requests.get(
+            f"{CREDIT_API}/{customer_id}",
+            timeout=5
+        )
+        response.raise_for_status()
 
-    response = requests.get(f"{CREDIT_API}/{customer_id}")
-
-    if response.status_code != 200:
+    except requests.exceptions.ConnectionError:
         log_agent(
             "UnderwritingAgent",
-            "Loan Evaluation",
+            "Credit Bureau API",
             "FAILED",
-            f"{customer_id} not found"
+            "Unable to connect to Credit Bureau service"
         )
         return {
             "status": "error",
-            "message": "Customer not found"
+            "message": "Credit Bureau service unavailable"
+        }
+
+    except requests.exceptions.Timeout:
+        log_agent(
+            "UnderwritingAgent",
+            "Credit Bureau API",
+            "FAILED",
+            "Request timed out"
+        )
+        return {
+            "status": "error",
+            "message": "Credit Bureau request timed out"
+        }
+
+    except requests.exceptions.HTTPError:
+        if response.status_code == 404:
+            log_agent(
+                "UnderwritingAgent",
+                "Loan Evaluation",
+                "FAILED",
+                f"{customer_id} not found"
+            )
+            return {
+                "status": "error",
+                "message": "Customer not found"
+            }
+
+        log_agent(
+            "UnderwritingAgent",
+            "Credit Bureau API",
+            "FAILED",
+            f"HTTP {response.status_code}"
+        )
+        return {
+            "status": "error",
+            "message": f"Credit Bureau API returned {response.status_code}"
+        }
+
+    except requests.exceptions.RequestException as e:
+        log_agent(
+            "UnderwritingAgent",
+            "Credit Bureau API",
+            "FAILED",
+            str(e)
+        )
+        return {
+            "status": "error",
+            "message": str(e)
         }
 
     customer = response.json()
@@ -69,10 +125,9 @@ def evaluate_loan(
 
     # --------------------------------------------------
     # Rule 2 : Between 1x and 2x Limit
-    # Salary Verification Required
     # --------------------------------------------------
 
-    if loan_amount <= (2 * limit):
+    if loan_amount <= 2 * limit:
 
         log_agent(
             "UnderwritingAgent",
@@ -108,6 +163,7 @@ def evaluate_loan(
             "REJECTED",
             f"EMI: {salary_result['emi']}"
         )
+
         return {
             "decision": "REJECTED",
             "reason": "Salary verification failed",

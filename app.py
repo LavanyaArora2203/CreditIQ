@@ -2,7 +2,7 @@ import asyncio
 
 from agents import Runner
 
-from loan_agents.master_agent import master_agent
+from backend.loan_agents.master_agent import master_agent
 
 
 async def main():

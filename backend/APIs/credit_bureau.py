@@ -31,6 +31,7 @@ async def get_credit_details(customer_id: str):
                 "monthly_salary": customer["Monthly Salary (₹)"],
                 "preapproved_limit": customer["Pre-Approved Limit (₹)"],
                 "existing_loan": customer["Existing Loan (₹)"],
+                "name": customer["Name"],
             }
 
     raise HTTPException(

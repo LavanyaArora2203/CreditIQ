@@ -12,9 +12,11 @@ from reportlab.platypus import (
     Table,
     TableStyle,
 )
+from pathlib import Path
 from reportlab.lib import colors
 
-OUTPUT_FOLDER = "GeneratedLetters"
+# OUTPUT_FOLDER = "GeneratedLetters"
+OUTPUT_FOLDER = Path(__file__).resolve().parent.parent / "GeneratedLetters"
 
 
 def generate_sanction_letter(
