@@ -1,0 +1,82 @@
+[
+  {
+    "customer_id": "CUST001",
+    "eligible": true,
+    "loan_amount": 500000,
+    "interest_rate": 10.25,
+    "tenure_months": 60,
+    "offer_valid_till": "2026-12-31"
+  },
+  {
+    "customer_id": "CUST002",
+    "eligible": true,
+    "loan_amount": 300000,
+    "interest_rate": 10.75,
+    "tenure_months": 48,
+    "offer_valid_till": "2026-12-31"
+  },
+  {
+    "customer_id": "CUST003",
+    "eligible": true,
+    "loan_amount": 700000,
+    "interest_rate": 11.50,
+    "tenure_months": 72,
+    "offer_valid_till": "2026-12-31"
+  },
+  {
+    "customer_id": "CUST004",
+    "eligible": true,
+    "loan_amount": 450000,
+    "interest_rate": 10.50,
+    "tenure_months": 60,
+    "offer_valid_till": "2026-12-31"
+  },
+  {
+    "customer_id": "CUST005",
+    "eligible": true,
+    "loan_amount": 400000,
+    "interest_rate": 12.25,
+    "tenure_months": 60,
+    "offer_valid_till": "2026-12-31"
+  },
+  {
+    "customer_id": "CUST006",
+    "eligible": true,
+    "loan_amount": 250000,
+    "interest_rate": 10.20,
+    "tenure_months": 36,
+    "offer_valid_till": "2026-12-31"
+  },
+  {
+    "customer_id": "CUST007",
+    "eligible": true,
+    "loan_amount": 600000,
+    "interest_rate": 11.00,
+    "tenure_months": 60,
+    "offer_valid_till": "2026-12-31"
+  },
+  {
+    "customer_id": "CUST008",
+    "eligible": false,
+    "loan_amount": 0,
+    "interest_rate": null,
+    "tenure_months": null,
+    "offer_valid_till": null
+  },
+  {
+    "customer_id": "CUST009",
+    "eligible": true,
+    "loan_amount": 1200000,
+    "interest_rate": 9.90,
+    "tenure_months": 84,
+    "offer_valid_till": "2026-12-31"
+  },
+  {
+    "customer_id": "CUST010",
+    "eligible": false,
+    "loan_amount": 0,
+    "interest_rate": null,
+    "tenure_months": null,
+    "offer_valid_till": null
+  }
+]

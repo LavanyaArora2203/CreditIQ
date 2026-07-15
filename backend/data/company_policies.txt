@@ -1,0 +1,97 @@
+ABC Finance Ltd. - Personal Loan Policy (Sample)
+
+This is a fictional policy document created for demonstration and
+testing purposes.
+
+Eligibility
+
+-   Applicant age: 21–60 years at loan application.
+-   Indian resident with valid KYC.
+-   Salaried applicants require at least 12 months of continuous
+    employment.
+-   Self-employed applicants require at least 24 months of business
+    continuity.
+-   Minimum monthly income:
+    -   Salaried: INR 25,000
+    -   Self-employed: INR 40,000
+
+Credit Policy
+
+-   Preferred credit score: 750+
+-   700–749: Eligible subject to underwriting review.
+-   650–699: Higher interest rate or reduced loan amount.
+-   Below 650: Normally declined unless exceptional compensating factors
+    exist.
+
+Loan Amount
+
+-   Minimum: INR 50,000
+-   Maximum: INR 2,000,000
+-   Maximum amount shall not exceed 20 times the applicant’s verified
+    monthly income.
+
+Tenure
+
+-   Minimum: 12 months
+-   Maximum: 60 months
+
+Debt-to-Income (DTI)
+
+-   Existing EMI + Proposed EMI should generally not exceed 40% of
+    verified monthly income.
+-   Applications above 40% DTI require manual approval.
+-   Applications above 50% DTI are rejected.
+
+Interest Rates
+
+-   Base interest rate: 10.50% p.a.
+-   Final rate depends on credit score, employment profile, income
+    stability, and internal risk grade.
+-   Interest may range from 10.50% to 18.00%.
+
+Processing Fee
+
+-   Up to 2% of the sanctioned amount.
+-   GST applicable as per prevailing regulations.
+
+Required Documents
+
+-   Aadhaar Card
+-   PAN Card
+-   Address Proof
+-   Last 3 Salary Slips (or equivalent income proof)
+-   Last 6 Months Bank Statements
+-   Passport-size Photograph
+
+Verification
+
+-   KYC verification is mandatory.
+-   AML and sanctions screening are mandatory.
+-   Income verification must be successful before disbursement.
+
+Approval Conditions
+
+-   Underwriting may reduce the sanctioned amount based on
+    affordability.
+-   Interest rate may be revised based on final risk assessment.
+-   Approval validity: 15 calendar days.
+
+Disbursement
+
+-   Processing fee and applicable charges are deducted before
+    disbursement.
+-   Funds are transferred only after successful verification and
+    acceptance of the sanction letter.
+
+Rejection Criteria
+
+-   Fraudulent documents.
+-   Failed KYC or AML checks.
+-   Credit score below policy threshold.
+-   Unstable employment or unverifiable income.
+-   Excessive existing debt obligations.
+
+Disclaimer
+
+This document is fictional and intended solely for AI agent development,
+testing, and educational purposes.

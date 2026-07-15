@@ -1,0 +1,95 @@
+{
+  "_note": "SYNTHETIC TEST DATA \u2014 no real PAN/Aadhaar/DOB. Formats are structurally valid but values are fabricated (Aadhaar block reserved 9999-xxxx-xxxx never issued in reality).",
+  "kyc_records": [
+    {
+      "customer_id": "CUST001",
+      "phone": "9876543210",
+      "address": "12B Andheri West, Mumbai",
+      "dob": "1994-11-04",
+      "pan_number": "AHFTR8040G",
+      "aadhaar_number": "9999-4811-9279",
+      "verification_status": "unverified"
+    },
+    {
+      "customer_id": "CUST002",
+      "phone": "9123456780",
+      "address": "34 Lajpat Nagar, Delhi",
+      "dob": "1999-10-01",
+      "pan_number": "OSSKL2871N",
+      "aadhaar_number": "9999-6574-5552",
+      "verification_status": "unverified"
+    },
+    {
+      "customer_id": "CUST003",
+      "phone": "9988776655",
+      "address": "56 Indiranagar, Bangalore",
+      "dob": "1981-03-07",
+      "pan_number": "YICCW6875M",
+      "aadhaar_number": "9999-2291-5803",
+      "verification_status": "unverified"
+    },
+    {
+      "customer_id": "CUST004",
+      "phone": "9871234560",
+      "address": "89 Anna Nagar, Chennai",
+      "dob": "1996-11-20",
+      "pan_number": "XJEBR7988M",
+      "aadhaar_number": "9999-5554-8428",
+      "verification_status": "unverified"
+    },
+    {
+      "customer_id": "CUST005",
+      "phone": "9765432109",
+      "address": "22 Kothrud, Pune",
+      "dob": "1988-11-27",
+      "pan_number": "JJFGY6617F",
+      "aadhaar_number": "9999-8573-7216",
+      "verification_status": "unverified"
+    },
+    {
+      "customer_id": "CUST006",
+      "phone": "9654321098",
+      "address": "15 Banjara Hills, Hyderabad",
+      "dob": "2001-05-21",
+      "pan_number": "RFITB8840S",
+      "aadhaar_number": "9999-6155-4483",
+      "verification_status": "unverified"
+    },
+    {
+      "customer_id": "CUST007",
+      "phone": "9543210987",
+      "address": "78 Navrangpura, Ahmedabad",
+      "dob": "1984-11-16",
+      "pan_number": "KXLGG5258M",
+      "aadhaar_number": "9999-6930-4593",
+      "verification_status": "unverified"
+    },
+    {
+      "customer_id": "CUST008",
+      "phone": "9432109876",
+      "address": "45 Salt Lake, Kolkata",
+      "dob": "1997-03-17",
+      "pan_number": "MTWDE6535O",
+      "aadhaar_number": "9999-9669-5119",
+      "verification_status": "unverified"
+    },
+    {
+      "customer_id": "CUST009",
+      "phone": "9321098765",
+      "address": "101 Malviya Nagar, Jaipur",
+      "dob": "1971-09-28",
+      "pan_number": "YRCXT7321A",
+      "aadhaar_number": "9999-5315-9201",
+      "verification_status": "unverified"
+    },
+    {
+      "customer_id": "CUST010",
+      "phone": "9210987654",
+      "address": "67 Gomti Nagar, Lucknow",
+      "dob": "1993-03-17",
+      "pan_number": "XWHQP1757Q",
+      "aadhaar_number": "9999-1009-6310",
+      "verification_status": "unverified"
+    }
+  ]
+}
