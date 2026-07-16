@@ -2,7 +2,7 @@
 
 ### 🌐 Live Demo
 
-**Frontend:** https://your-frontend.vercel.app
+**Frontend:** https://credit-iq-psi.vercel.app/
 
 **Backend API:** https://loan-api.onrender.com
 
