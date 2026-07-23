@@ -1,0 +1,14 @@
+crewai>=1.15.2
+crewai-tools>=1.15.2
+email-validator>=2.3.0
+fastapi>=0.139.0
+reportlab>=5.0.0
+streamlit>=1.59.2
+weasyprint>=69.0
+uvicorn[standard]>=0.29
+python-jose[cryptography]>=3.3
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.9
+pydantic>=2.6
+sse-starlette>=2.1
+python-dotenv>=1.0

@@ -11,3 +11,16 @@ app = FastAPI(
 app.include_router(credit_router)
 app.include_router(crm_router)
 app.include_router(offer_router)
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "https://your-app.vercel.app",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
