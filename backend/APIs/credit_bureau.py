@@ -12,7 +12,7 @@ router = APIRouter(
 DATA_FILE = (
     Path(__file__).resolve().parent.parent
     / "data"
-    / "customers_data.json"
+    / "customer_data.json"
 )
 
 
