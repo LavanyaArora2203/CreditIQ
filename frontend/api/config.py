@@ -18,12 +18,7 @@ DATA_DIR = ROOT_DIR / "data"
 CUSTOMERS_FILE = BACKEND_DIR / "data" / "customer_data.json"   # ← changed
 USERS_FILE = DATA_DIR / "users.json"  
 
-# Frontend origin(s) allowed to hit the API.
-CORS_ORIGINS = [
-    o.strip()
-    for o in os.getenv(
-        "CORS_ORIGINS",
-        "http://localhost:8080,http://localhost:5173,http://localhost:3000",
-    ).split(",")
-    if o.strip()
+allow_origins=[
+    "http://localhost:5173",
+    "https://credit-iq-psi.vercel.app",   # ← your actual Vercel domain, exact match
 ]
