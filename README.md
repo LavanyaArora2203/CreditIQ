@@ -4,7 +4,7 @@
 
 **Frontend:** https://credit-iq-psi.vercel.app/
 
-**Backend API:** https://loan-api.onrender.com
+**Backend API:** https://credit-iq-api.onrender.com
 
 ---
 
