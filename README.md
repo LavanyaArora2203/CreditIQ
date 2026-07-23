@@ -2,9 +2,9 @@
 
 ### 🌐 Live Demo
 
-**Frontend:** https://credit-iq-psi.vercel.app/
+**Frontend:** https://credit-iq-nine.vercel.app/
 
-**Backend API:** https://credit-iq-api.onrender.com
+
 
 ---
 
